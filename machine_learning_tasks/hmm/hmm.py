@@ -4,6 +4,8 @@
 
 # http://blog.csdn.net/u010378878/article/details/51610586
 
+# blog.csdn.net/u014688145/article/details/53012400
+
 import numpy as np
 
 # BEMS
@@ -12,10 +14,10 @@ INPUT_DATA = "RenMinData.txt"  # 用于训练的语料
 PROB_EMIT = "prob_emit.py"     # 混淆矩阵
 PROB_TRANS = "prob_trans.py"   # 状态转移矩阵
 
-pi_dict = {}        # 状态初始概率向量字典表示
+pi_dict = {}        # S：状态初始概率向量字典表示
 pi_dict_size = 0.0
-prob_trans_dict = {}    # 状态转移矩阵字典表示
-prob_emit_dict = {}     # 混淆矩阵（发射矩阵）字典表示
+prob_trans_dict = {}    # A：状态转移矩阵字典表示
+prob_emit_dict = {}     # B：混淆矩阵（发射矩阵）字典表示
 state_list = ['B', 'M', 'E', 'S']
 
 state_count_dict = {}  # 记录每一个状态state出现的总次数

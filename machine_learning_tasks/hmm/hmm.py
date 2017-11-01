@@ -101,19 +101,20 @@ def get_probs(data_set):
             # p(state1->w1) = num_of(state1+w1)/num_of(w1)
             # 一个状态 state1 生成一个词w1的概率 等于 w1是state1的总数量 除以 w1出现的总次数
             prob_emit_dict[state][w] = num / element_count_dict[w]
-    
+
 
 import os, jieba
 
 dir = os.path.dirname(__file__)
 
 def get_data_set():
-    with open(dir+'/text.txt', 'r') as f:
+    with open(dir+'/text.txt', 'r', encoding='utf-8') as f:
         t = f.readlines()
         t1 = t[0]
         words = list(jieba.cut(t1))
         return words
     
+import json
 
 def run():
     init_arrays()
@@ -121,7 +122,8 @@ def run():
     get_probs(data_set)
     print("----------------以下Pi向量-------------------")
     print(pi_dict)
-
+    with open(dir+'/prob_emit_dict.json', 'w', encoding='utf-8') as f:
+        json.dump(prob_emit_dict, f, ensure_ascii=False, indent=4)
     print('-------------以下是状态转移矩阵----------------')
     for k1 in prob_emit_dict:
         for k2 in prob_emit_dict[k1]:

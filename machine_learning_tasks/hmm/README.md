@@ -91,3 +91,12 @@ http://www.52nlp.cn/itenyh%e7%89%88-%e7%94%a8hmm%e5%81%9a%e4%b8%ad%e6%96%87%e5%8
 
   EM 算法： http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006936.html
 
+
+
+## 命名实体识别
+
+http://www.jianshu.com/p/7e233ef57cb6
+
+命名实体识别，即实体标注
+
+给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。

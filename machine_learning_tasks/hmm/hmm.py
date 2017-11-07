@@ -99,8 +99,8 @@ def get_probs(data_set):
         for w in prob_emit_dict[state]:
             num = prob_emit_dict[state][w]
             # p(state1->w1) = num_of(state1+w1)/num_of(w1)
-            # 一个状态 state1 生成一个词w1的概率 等于 w1是state1的总数量 除以 w1出现的总次数
-            prob_emit_dict[state][w] = num / element_count_dict[w]
+            # 一个状态 state1 生成一个词w1的概率 等于 w1是state1的总数量除以  state 出现的总次数
+            prob_emit_dict[state][w] = num / state_count_dict[state]
 
 
 import os, jieba

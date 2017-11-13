@@ -63,3 +63,6 @@ Machine Learning Tasks. 该仓库将逐步添加各种常用机器学习基础�
 
 
 
+## install
+
+pip install keras -i https://pypi.tuna.tsinghua.edu.cn

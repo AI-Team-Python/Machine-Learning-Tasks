@@ -1,10 +1,8 @@
 # Precision Accuracy and Recall
 
-关于`精确率`、`准确率`和`召回率`的内容与区别的分析笔记
+关于`精确率`、`准确率`和`召回率`的内容与区别的分析笔记。 精确率(precision)与准确率(accuracy)，召回率(recall)
 
-精确率(precision)与准确率(accuracy)，精确率与召回率之间的差别。
-
->> 参照链接：https://www.zhihu.com/question/19645541/answer/39732647
+  >> 参照链接：https://www.zhihu.com/question/19645541/answer/39732647
 
 ## 概念介绍
 
